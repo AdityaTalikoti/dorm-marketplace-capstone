@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dorm Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dorm Marketplace</h1>
+      <p>Buy and sell used items on campus</p>
+    </header>
+
+    <div class="main-content">
+      <div class="left-panel">
+        <h2>List an Item</h2>
+        <form id="list-form">
+          <input type="text" id="title" placeholder="Item Title" required>
+          <textarea id="description" placeholder="Item Description" required></textarea>
+          <input type="text" id="seller" placeholder="Your Name (Seller)" required>
+          <button type="submit">List Item</button>
+        </form>
+
+        <div class="user-role-section">
+          <h2>Simulate User</h2>
+          <label>You are acting as:</label>
+          <input type="text" id="current-user" placeholder="Enter your name" value="Student A">
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <h2>Available Items Feed</h2>
+        <div id="items-container">
+          <!-- Items will be injected here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
